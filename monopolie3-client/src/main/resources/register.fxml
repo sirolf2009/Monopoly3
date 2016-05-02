@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" styleClass="register" stylesheets="@monopolie.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sirolf2009.monopolie3.client.controller.ControllerRegister">
+   <children>
+      <VBox maxHeight="200.0" maxWidth="300.0" prefHeight="200.0" prefWidth="100.0" StackPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="registerCard" alignment="CENTER" styleClass="card" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <VBox alignment="CENTER_RIGHT">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Team:" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="teamName" styleClass="text-field" />
+                           </children>
+                        </HBox>
+                        <Label fx:id="errorMessage" styleClass="label-error" text="Vul hier een team naam in!" visible="false">
+                           <padding>
+                              <Insets bottom="16.0" />
+                           </padding>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#onStartClicked" styleClass="button-raised" text="Start" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox fx:id="statusCard" alignment="CENTER" maxHeight="200.0" maxWidth="300.0" prefHeight="200.0" prefWidth="100.0" styleClass="card" visible="false">
+         <children>
+            <ProgressIndicator>
+               <VBox.margin>
+                  <Insets bottom="16.0" />
+               </VBox.margin>
+            </ProgressIndicator>
+            <Label fx:id="statusMessage" text="Label" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>

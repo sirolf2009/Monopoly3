@@ -1,0 +1,30 @@
+.root{
+	-accent: #FF4081;
+}
+
+.register {
+	-fx-background-image: url(splash.jpg);
+	-fx-background-repeat: stretch;
+	-fx-background-position: center;
+}
+
+.label-error {
+	-fx-text-fill: #F44336;
+}
+
+.street-button {
+	-fx-font-size: 8.0px;
+}
+
+.street-button-visiting {
+	-fx-background-color: -accent;
+}
+
+.context-menu {
+	-fx-font-size: 12.0px;
+}
+
+.timeout-label {
+	-fx-font-size: 12.0px;
+	-fx-text-fill: red;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" styleClass="content-background" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sirolf2009.monopolie3.server.ControllerServer">
+  <children>
+      <StackPane styleClass="card">
+         <children>
+            <Button fx:id="buttonStart" mnemonicParsing="false" styleClass="accentButton" text="Start the game" StackPane.alignment="TOP_RIGHT">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets right="8.0" top="4.0" />
+               </StackPane.margin>
+            </Button>
+            <Label styleClass="card-title" text="Monopoly Server" />
+         </children>
+      </StackPane>
+      <TextArea fx:id="console" editable="false" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets top="8.0" />
+         </VBox.margin>
+      </TextArea>
+  </children>
+</VBox>
